@@ -1,1 +1,151 @@
-# Bleach-Cards
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+        body {
+            background: #A9A9A9;
+            font-family: Open Sans;
+            font-size: 25px;
+            color: #222;
+        }
+
+        label {
+            -webkit-perspective: 1000px;
+            background: transparent;
+            perspective: 1000px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            display: block;
+            width: 305px;
+            height: 445px;
+            float: left;
+            margin: 50px
+        }
+
+        .card {
+            position: relative;
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all 600ms;
+            transition: all 600ms;
+            z-index: 20;
+        }
+
+            .card div {
+                position: absolute;
+                background: transparent;
+                height: 100%;
+                width: 100%;
+                background: transparent;
+                text-align: center;
+                line-height: 200px;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border-radius: 2px;
+            }
+
+            .card .back {
+                background: transparent;
+                color: transparent;
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+
+        label:hover .card {
+            -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+            background: transparent;
+        }
+
+        input {
+            display: none;
+        }
+
+        :checked + .card {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
+
+        label :checked + .card {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            box-shadow: 0 20px 20px rgba(255,255,255,.2);
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <h1 style="text-align:center">Agents Of Shinigami (Arc 1) 1st Edition Set</h1>
+    <h2 style="text-align:center">Hover over the cards below</h2>
+
+
+
+    <label>
+        <input type="checkbox" />
+        <div class="card">
+            <div class="front">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Yellow-Backing.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;" />
+            </div>
+            <div class="back">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Finished Cards\Agents Of Shinigami (Arc 1) 1st Edition Set\Ichigo-Ultra Rare.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;">
+            </div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox" />
+        <div class="card">
+            <div class="front">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Card-Backing2.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;" />
+            </div>
+            <div class="back">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Finished Cards\Agents Of Shinigami (Arc 1) 1st Edition Set\Base-Byakuya.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;">
+            </div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox" />
+        <div class="card">
+            <div class="front">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Card-Backing2.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;" />
+            </div>
+            <div class="back">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Finished Cards\Agents Of Shinigami (Arc 1) 1st Edition Set\Base-Rukia.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;">
+            </div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox" />
+        <div class="card">
+            <div class="front">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Card-Backing2.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;" />
+            </div>
+            <div class="back">
+                <img src="C:\Users\lukes\Pictures\Bleach card game\Finished Cards\Agents Of Shinigami (Arc 1) 1st Edition Set\Yoruichi-Base.png"
+                     style="height: 445px; width: 305px; border-radius: 20px; padding: 10px; cursor: pointer;">
+            </div>
+        </div>
+    </label>
+
+</body>
+
+</html>
